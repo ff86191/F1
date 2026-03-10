@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reward</title>
 
+<style>
+
+body{
+background:black;
+color:white;
+font-family:sans-serif;
+text-align:center;
+padding-top:100px;
+}
+
+.code{
+font-size:30px;
+color:yellow;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Payment Successful ✅</h1>
+
+<p>Your Activation Code</p>
+
+<div class="code" id="code"></div>
+
+<script>
+
+var codes = [
+"VIP-83KD-92KS",
+"VIP-12SK-8S2D",
+"VIP-7SS2-9DKS",
+"VIP-91KD-72SS"
+];
+
+var random = codes[Math.floor(Math.random()*codes.length)];
+
+document.getElementById("code").innerText = random;
+
+</script>
+
+</body>
+</html>
